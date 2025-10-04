@@ -1,0 +1,13 @@
+ktor:
+  application:
+    modules:
+      - top.suzhelan.ktor.ApplicationKt.module
+  deployment:
+    port: 8080
+
+database:
+  #你的数据库url,jdbc驱动依赖记得加上，ktor支持所有有jdbc的数据库，例如mysql,oracle,sqltie,postgresql...
+  enabled: false
+  url: jdbc:postgresql://localhost:5432/plugin
+  user: suzhelan
+  password: suzhelan
